@@ -1,0 +1,97 @@
+body {
+    width: 1920px;
+    height: 1080px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    width: 100vw;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(97, 80, 114);
+}
+
+#site-title {
+    color: gainsboro;
+    margin: 10px;
+}
+
+#logo,
+#fb,
+#google {
+    height: 4em;
+    margin: 5px;
+}
+
+.web-link,
+#footer {
+    color: rgb(195, 195, 195);
+    font-weight: 700;
+    font-size: 2em;
+    margin: 10px;
+}
+
+.web-link:hover {
+    color: #b69090;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#carousel {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#event-info {
+    width: 50vw;
+    text-align: center;
+}
+
+#map,
+#news {
+    margin: 20px;
+}
+
+.news-box {
+    text-align: center;
+}20
+
+.news-btn>button {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    position: absolute;
+    border-radius: 50%;
+    font-weight: 600;
+    text-align: center;
+}
+
+#map>img,
+#news>img {
+    border-radius: 20px;
+}
+
+#performance-iformation,
+#portfolio {
+    width: 45%;
+    margin: 5px;
+    text-align: center;
+}
+
+#performance-iformation>img,
+#portfolio>img {
+    width: 100%;
+    border-radius: 20px;
+}

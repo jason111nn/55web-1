@@ -14,12 +14,12 @@
 </head>
 
 <body>
-    <header>
+    <header id="navbar">
         <h2 id="site-title">2025國際交響樂團演奏會(ISOC)</h2>
         <img src="./logo/logo.png" alt="logo" id="logo">
         <a class="web-link" href="home.html" id="home">Home</a>
         <a class="web-link" href="news.html" id="news">News</a>
-        <a class="web-link" href="performance.html" id="prformance">Performance</a>
+        <a class="web-link" href="performance.html" id="performance">Performance</a>
         <a class="web-link" href="tickets.html" id="tickets">Tickets</a>
         <a class="web-link" href="search.html" id="search">Search</a>
     </header>

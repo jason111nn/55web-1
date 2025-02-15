@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,9 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <script src="./js/veri.js"></script>
 </head>
+
 <body>
     <header>
         <h1 id="site-title">2025國際交響樂團演奏會(ISOC)</h1>
@@ -22,7 +25,22 @@
         <a class="web-link" href="search.html" id="search">Search</a>
     </header>
     <main>
-        
+        <form onsubmit="tickets(event)" method="get" id="tickets-form">
+            <h1>購票資訊區</h1>
+            <label for="firstname">First name(名字)</label>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label for="lastname">Last name(姓氏)</label>
+            <input type="text" id="lastname" name="lastname"><br>
+            <label for="phone">Phone(手機號碼)</label>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="Password">Password(會員密碼)</label>
+            <input type="text" id="password" name="password"><br>
+            <label>Verification(數字驗證)</label>
+            <div id="drag-box"></div>
+            <div id="userans"></div>
+            <button type="button" onclick="rt()">Reset</button>
+            <button>Submit</button>
+        </form>
     </main>
     <footer>
         <div id="share-info">
@@ -31,5 +49,38 @@
         </div>
         <span id="footer">Copyright &copy; 2025 ISOC All Rights Reserved</span>
     </footer>
+    <script>
+        let ans = [], userans = [];
+        
+
+        function rt() {
+            veri();
+            $("#tickets-form input").val("");
+        }
+        function tickets() {
+            event.preventDefault();
+            const form = $("form")[0];
+            const formData = new FormData(form);
+            if (userans.join("") === ans.join("")) {
+                $.ajax({
+                    url: "./post.php",
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (res) {
+                        alert("資料送出"+res);
+                        location.reload();
+                    },
+
+                    error: function () {
+                        alert("資料送出失敗");
+                    }
+                });
+            } else {
+                alert("驗證碼排列錯誤");
+            }
+        }
+    </script>
 </body>
 </html>

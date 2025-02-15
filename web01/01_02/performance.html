@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/bootstrap.js"></script>
 </head>
+
 <body>
     <header>
         <h1 id="site-title">2025國際交響樂團演奏會(ISOC)</h1>
@@ -33,12 +35,11 @@
             <img src="./img/07.jpg" alt="">
             <div>
                 <h2>歌手介紹區</h2>
-                <p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quis sequi. Suscipit ex doloribus dolore cupiditate repellat quaerat sit, repellendus porro nam, voluptate iure voluptatum reprehenderit tempore eum neque obcaecati.</p>
-                <p style="display: none;" id="readmore-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae magni modi nemo quia? Placeat deleniti aut minus recusandae magni nostrum laborum cumque voluptates. Sequi repellat aut cumque tenetur. Nihil!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quis sequi. Suscipit ex doloribus dolore cupiditate repellat quaerat sit, repellendus porro nam, voluptate iure voluptatum reprehenderit tempore eum neque obcaecati.</p>
+                <p style="display: none;" id="readmore-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Excepturi repudiandae magni modi nemo quia? Placeat deleniti aut minus recusandae magni nostrumlaborum cumque voluptates. Sequi repellat aut cumque tenetur. Nihil!</p>
                 <button class="read-btn" onclick="readMore()">Read more</button>
             </div>
-            
+
         </div>
     </main>
     <footer>
@@ -49,10 +50,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quis sequi. Sus
         <span id="footer">Copyright &copy; 2025 ISOC All Rights Reserved</span>
     </footer>
     <script>
-        function readMore(){
+        function readMore() {
             $("#readmore-text").slideToggle(500)
             $(".read-btn").text($(".read-btn").text() === "Read more" ? "Read less" : "Read more")
         }
     </script>
 </body>
+
 </html>

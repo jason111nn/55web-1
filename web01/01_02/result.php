@@ -22,7 +22,9 @@
         <a class="web-link" href="search.html" id="search">Search</a>
     </header>
     <main>
-        
+        <?php
+            
+        ?>
     </main>
     <footer>
         <div id="share-info">

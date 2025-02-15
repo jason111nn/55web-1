@@ -32,7 +32,7 @@ footer {
 #footer {
     color: rgb(195, 195, 195);
     font-weight: 700;
-    font-size: 2em;
+    font-size: 24px;
     margin: 10px;
 }
 
@@ -76,6 +76,8 @@ main {
     border-radius: 50%;
     font-weight: 600;
     text-align: center;
+    background-color: #474967;
+    color: antiquewhite;
 }
 
 #map>img,
@@ -104,14 +106,14 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 800px;
     padding: 10px;
     color: aliceblue;
 }
-form>h1{
-    font-weight: 700;
+form>h2{
+    font-weight: 600;
 }
-form>input , #userans{
+form>input{
     width: 75%;
     font-size: 25px;
     color: ghostwhite;
@@ -125,9 +127,9 @@ form>input , #userans{
     text-align: center;
 }
 form>label{
-    font-size: 25px;
+    font-size: 24px;
 }
-form>button,#back-button{
+form>button,#back-button ,.read-btn{
     width: 75%;
     font-size: 20px;
     font-weight: 700;
@@ -147,6 +149,12 @@ form>button,#back-button{
     height: 80px;
     border: #b7b7b7 5px solid;
     border-radius: 20px;
+    background-color: #d9d9d9;
+}
+#userans{
+    color: gray;
+    font-weight: 600;
+    font-size: 30px;
 }
 #drag-box{
     background-color: #b7b7b7;
@@ -162,4 +170,7 @@ form>button,#back-button{
     font-weight: 700;
     border-radius: 10px;
     background-color: #b69090;
+}
+#portfolio{
+    position: relative;
 }

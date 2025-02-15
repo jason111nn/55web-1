@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <h1 id="site-title">2025國際交響樂團演奏會(ISOC)</h1>
+        <h2 id="site-title">2025國際交響樂團演奏會(ISOC)</h2>
         <img src="./logo/logo.png" alt="logo" id="logo">
         <a class="web-link" href="home.html" id="home">Home</a>
         <a class="web-link" href="news.html" id="news">News</a>

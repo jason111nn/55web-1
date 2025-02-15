@@ -44,7 +44,7 @@
         <a class="web-link" href="search.html" id="search">Search</a>
     </header>
     <main>
-        <form action="./result.php" id="search">
+        <form action="./result.php" id="search" method="get">
             <h1>查詢購票</h1>
             <label for="SearchItem">搜尋表格內容</label>
             <select name="SearchItem" id="SearchItem">
@@ -53,7 +53,7 @@
                 <option value="phone">Phone(手機號碼)</option>
                 <option value="password">Password(會員密碼)</option>
             </select>
-            <input type="text" name="Ttem">
+            <input type="text" name="Item">
             <div id="drag-box"></div>
             <div id="userans"></div>
             <button id="submit-button">Submit</button>

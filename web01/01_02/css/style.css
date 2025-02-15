@@ -127,7 +127,7 @@ form>input , #userans{
 form>label{
     font-size: 25px;
 }
-form>button{
+form>button,#back-button{
     width: 75%;
     font-size: 20px;
     font-weight: 700;
